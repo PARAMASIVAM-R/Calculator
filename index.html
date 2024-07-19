@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container  ">
+        <div class="calci ">
+            <div class="head ">
+                <h3> Claculator</h3>
+               <div class="headimg">
+                <div class="imgs"> <img src="images/github_96px.png" alt="github"></div>
+                <div class="imgs " id="dark"> <img src="images/moon-line.png" alt="dark/bright"></div>
+    
+               </div>
+                
+            </div>
+            
+            <div class="screen ">
+                
+              <!-- <div class="txtscrn " id="textarea" >Result </div> -->
+               <input type="text" name="display" id="textarea">
+              <button class="btn btnc" onclick="clr()" >C</button>
+            </div>
+            
+            <div class="btnrow btnrow_1">
+                <button class="btn " type="button" id="num01"  onclick=" disp('1')" > 1 </button>
+                <button class="btn " type="button" id="num02"  onclick="disp('2')" > 2 </button>
+                <button class="btn " type="button" id="num03"  onclick="disp('3')" > 3 </button>
+                <button class="btn " type="button" id="sym_+"  onclick="disp('+')" > + </button>
+             
+            </div>
+            <div class="btnrow btnrow_2">
+                <button class="btn " type="button" id="num04" onclick="disp('4')" > 4 </button>
+                <button class="btn " type="button" id="num05" onclick="disp('5')" > 5 </button>
+                <button class="btn " type="button" id="num06" onclick="disp('6')" > 6 </button>
+                <button class="btn " type="button" id="sym_-" onclick="disp('-')" > - </button> 
+            </div>
+            <div class="btnrow btnrow_3">
+                <button class="btn " type="button" id="num07" onclick="disp('7')" > 7 </button>
+                <button class="btn " type="button" id="num08" onclick="disp('8')" > 8 </button>
+                <button class="btn " type="button" id="num09" onclick="disp('9')" > 9 </button>
+                <button class="btn " type="button" id="sym_x" onclick="disp('*')" > x </button>
+            </div>
+            <div class="btnrow btnrow_4">
+                <button class="btn " type="button" id="sym_/" onclick="disp('/')" > / </button>
+                <button class="btn " type="button" id="num00" onclick="disp('0')" > 0 </button>
+                <button class="btn " type="button" id="sym_." onclick="disp('.')" > . </button>
+                <button class="btn btnsol" type="button" id="solve"  onclick="solve()"  > = </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js">
+
+    </script>
+</body>
+</html> 

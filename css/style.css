@@ -1,0 +1,129 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(133, 132, 125);
+  
+}
+.calci{
+    position: absolute;
+    background-color: rgb(23, 40, 56);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 4px 4px 0px rgb(0, 0, 0);
+
+}
+.head{
+    display: flex;
+    width: 270px;
+    justify-content: flex-start; 
+    align-items: space-around; 
+    margin-bottom: 10px;
+    color: white;
+    column-gap: 60px;
+    /* background-color: beige; */
+    
+}
+.headimg{
+    display: flex;
+}
+.head h3{
+    font-size: 28px;
+    
+}
+.head .imgs{
+    height: 25px;
+    width: 25px;
+   position:relative;
+   margin-top: 4px;
+   margin-left: 10px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+}
+.screen{
+    display: flex;
+    /* background-color: aquamarine; */
+    
+}
+#textarea{
+    width: 220px;
+    height: 55px; 
+    padding: 12px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    text-align: left;
+    line-height: 32px;
+    font-size: 25px;
+    margin-top: 8px;
+}
+    
+.btn{
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    
+    /* display: block; */
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 2px 4px 4px  rgb(0, 0, 0);
+
+}
+.container .btn.btnc{
+    background-color: red;
+}
+.container .btn.btnsol{
+    background-color: rgb(15, 211, 15);
+}
+
+.btn:hover{
+    opacity: 0.8;
+    transition: 0.2s all;
+    /* transform: scale(1.001); */
+}
+.container.active{
+    background-color:rgba(27, 23, 23, 0.781) ;
+}
+.container.active  .btn{
+       background-color: black;
+       color: white;
+       box-shadow: 1px 2px 4px 0px rgb(245, 242, 242);
+
+} 
+.container.active .btn.btnc{
+    background-color: red;
+}
+.container.active .btn.btnsol{
+    background-color: rgb(15, 211, 15);
+}
+.container.active #dark{
+    color: white;
+    background-color: aliceblue;
+}
+.container.active .calci{
+    background-color: rgb(17, 16, 16);
+    box-shadow: 1px 4px 4px 0px rgb(255, 255, 255);
+
+}
+.container.active .calci #textarea{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    outline: none;
+}
